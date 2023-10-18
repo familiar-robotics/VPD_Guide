@@ -1,31 +1,33 @@
 An almost certainly incomplete table of vision systems and processors that include some sort of additional on-device image processing capability vs those that simply firehose image data at you. This also includes processor boards/SOMs that have a socket/connector for a camera but don't come with one by default. ,,,,,,,,,,,,,,
 Vendor/Manufacturer,Product,Vision Sensor(s),Shutter,Depth-Sensing,Stereo/Mono,Processor Type,Processor,Memory(RAM/Storage),Interface(s),ML Frameworks,OS/SDK/Lang. Support,Power Reqs,Case,Availabie
-Luxonis,"OAK-D(Lite, Pro, IOT, POE, etc.)",Various,Global,Optical & ToF(Depending on Model),Both,Vector/GPU,Movidius Myriad-X,2GB DDR4,USB-3 (1),Multiple(3),OpenVINO,5V(9),IP6x optional,Yes
+Luxonis,"OAK-D(Lite, Pro, IOT, POE, etc.)",Various,Global,Optical & ToF(Depending on Model),Both,Vector/GPU,Movidius Myriad-X,2GB DDR4,USB-3 (1),Multiple(3),"OpenVINO, DeothAI(Python,C++)",5V(9),IP6x optional,Yes
 OpenMV,OpenMVCam H7,OV7725,Rolling(4),N/A,Mono,32-bit CPU,Cortex M7,512K RAM ,"USB-2,SPI,I2C,UART","CMSIS-NN, Caffe",Custom OpenCV-alike,100mA,"plastic, snap-together",Yes
+OpenMV,OpenMVCam RT,OV5640,Rolling(4),N/A,Mono,32-bit CPU,IMXRT1060(Cortex M7) ,32M SDRAM/16M Storage,"USB3,WiFi,BLE,PoE(5)",TFLite,Custom OpenCV-alike,TBD,,Yes(8)
 "EyeCloud AI, Inc. ",EyeCloud AI Kit,various(2),Rolling(4),N/A,Mono,Vector/GPU,Movidius Myriad-X,8G DDR4,"USB3,USB3,others(1)",Multiple(3),OpenVINO,"5V, 2A recommended",None,Yes
 "EyeCloud AI, Inc. ",OpenNCC/NCB,CSI/MIPI(7),N/A,N/A,N/A,Vector/GPU,Movidius Myriad-X,8 GB RAM,"USB3, USB2, FPC",Multiple(3),OpenVINO/OpenNCC,5V/2A,,Yes
 DFRobot,HuskyLens,OV2640,Rolling,N/A,Mono,64-bit CPU,RISCV64(Kendryte K210),6MB/16MB,"UART,I2C",N/A,Arduino,"320mA@3.3V, 230mA@5.0V ",None,Yes
-Charmed Labs,PixyCam2, Aptina MT9M114,Rolling ,N/A,Mono,32-bit CPU,Cortex M4(NXP4330),(264K/2M),"USB2, UART,I2C,SPI",N/A,Arduino,150mA,None,Yes
-Arduino,Nicla,??,??,ToF(VL53Lxx),Mono,32-bit CPU,Dual Cortex M7/M4,(264K/2M),"USB3,WiFi, BLE",N/A,"Arduino,OpenMV,MicroPython",,None,Yes
-Google ,Coral Dev Micro,HiMax,Rolling,N/A,Mono,CPU/TPU,Dual Cortex M7/M4 w/TPU,(512Mb/1Gb),"USB2, Wifi,BLE,PoE(5)","TFLite, TFLite Micro","Python, C++",5V,,Yes(8)
+Charmed Labs,PixyCam2, Aptina MT9M114,Rolling ,N/A,Mono,32-bit CPU,Cortex M4(NXP4330),(264K/2M),"USB2, UART,I2C,SPI",N/A,"Arduino,PixyMon",150mA,None,Yes
+Arduino,Nicla,GC2145(GalaxyCore) ,??,ToF(VL53L1CBV0FY),Mono,32-bit CPU,Dual Cortex M7/M4(STM32H747AII6 ),"1MB RAM/2MB Flash, 16MB QSPI ","USB3,WiFi, BLE",N/A,"Arduino,OpenMV,MicroPython",,None,Yes
+Google ,Coral Dev Micro,HiMax,Rolling,N/A,Mono,CPU/TPU,Dual Cortex M7/M4 w/TPU,(512Mb/1Gb),"USB2, Wifi,BLE,PoE(5)","TFLite, TFLite Micro","Python, C++",5V,,Yes
 MistyWest,MistySOM,CSI/MIPI(7),N/A,N/A,N/A,CPU/TPU,ARM A55,(2G/32G),"USB2,SPI.I2C,UART,CAN, etc.",ONNX compatible,"Yocto, OpenCV 4.1",5V 1A,,No(6)
 VIA,Pixetto,GalaxyCore GC2053,??,N/A,Mono,CPU ,ARM Cortex A7,64M/128M,Grove/USB2,TFLite ,"Python, Scratch",12V,,Yes
 Adlink,AI Cam DevKit,Sony IMX179,Rolling,N/A,Mono,CPU/GPU,NVidia Maxwell(Nano SOM),4G/16G,USB3/USB2/Gbit LAN,"CUDA, Multiple(3)",CUDA/EVA,12/24V 15V via USB-C,,Yes
 ECon Systems,SmartE-Cam,Sony IMX290 ,Rolling(4),N/A,Mono,CPU/GPU,NVidia Pascal (TX2 SOM),8G/32G,USB3/USB2/Gbit LAN,"CUDA, Multiple(3)","Python, C/C++",802.3at POE,,Yes
-Hailo.AI,Hailo-8/15,N/A,N/A,N/A,N/A,GPU,Hailo-8,,M.2 PCIe,Unknown,"Python, C/C++",3.3V (10),,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+Hailo.AI,Hailo-8/15,N/A,N/A,N/A,N/A,GPU,Hailo-8,,M.2 PCIe,Unknown,"Python, C/C++",3.3V (10),,Yes
+Espressif,ESP-S3-EYE,OV-2640,Rolling,No,Mono,CPU,ESP32-S3R8,8M PSRAM/8M Flash,"USB3,JTAG,WLAN(11)",TFLite/TFLite-Micro,MicroPython,5V/3.3V,None,Yes(12)
+Darcy.ai,DarcyCam,IMX-219,Rolling,No,Mono,CPU/TPU,ARM A55/Google Coral ,8G RAM/128G eMMC,USB3/WiFi/PoE/MicroHDMI,Multiple(3),Debian Linux,5V/USB/802.3at PoE,built-in,No(6)
+Orbbec,Persee,???,Rolling,Structured Light,Stereo,CPU/NPU,AmLogic AM311D media proc.(quad core A73 w/ dual A53),4G RAM/32GB Flash,"USB2,WiFi,BT 5",N/A,Ubuntu Linux/Android,12V/2A DC,Yes,Yes
+Useful,Tiny Code Reader,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,ZXing,3.3V,None,Yes
+Useful,Person Sensor,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,N/A,3.3V,None,Yes
 Notes,,,,,,,,,,,,,,
 "1 - USB3.0 is the primary interface on most models, IOT & OEM versions may have UART, PoE, etc. available for interfacing as well",,,,,,,,,,,,,,
 "2. No default sensor included, user selects from a set of vendor-provided ""kit"" options at purchase.",,,,,,,,,,,,,,
 3 - Most common NN models/frameworks supported via converter/compile toolchain,,,,,,,,,,,,,,
 4 - Rolling shutter seems to be default. Global shutter is available either on a separate plug-in module or via different camera sensor module as a separate purchase,,,,,,,,,,,,,,
 5 - Different HW interfaces available as option boards which can be purchased separately,,,,,,,,,,,,,,
-6. Not available for purchase as of 3/23 ,,,,,,,,,,,,,,
+6. Not available for purchase as of 6/23 ,,,,,,,,,,,,,,
 7 - Does not come with a camera/vision sensor by default. Features CSI/MIPI FPC interface for user-provided sensor,,,,,,,,,,,,,,
 8. Available on pre-order,,,,,,,,,,,,,,
 "9. Default voltage is listed, usually via USB3, other options like POE may be available on different models and use a 24/48/57V power injector at the host end. ",,,,,,,,,,,,,,
 10. See interface spec for actual device power requirements.  ,,,,,,,,,,,,,,
+11. Uses Integrated radio module to provide 802.11a/b/g/n and BT4.2 wireless connectivity,,,,,,,,,,,,,,
