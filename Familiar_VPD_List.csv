@@ -19,6 +19,9 @@ Darcy.ai,DarcyCam,IMX-219,Rolling,No,Mono,CPU/TPU,ARM A55/Google Coral ,8G RAM/1
 Orbbec,Persee,???,Rolling,Structured Light,Stereo,CPU/NPU,AmLogic AM311D media proc.(quad core A73 w/ dual A53),4G RAM/32GB Flash,"USB2,WiFi,BT 5",N/A,Ubuntu Linux/Android,12V/2A DC,Yes,Yes
 Useful,Tiny Code Reader,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,ZXing,3.3V,None,Yes
 Useful,Person Sensor,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,N/A,3.3V,None,Yes
+Tangram Vision,HiFi,Mira220 ,Global,Structured Light,Stereo,CPU,TI Jacinto(Dual ARM A72),8GB RAM,"USB-3,PoE, CSI2.0",TIDL,"TIDL, ROS",802.3af POE,,No(8)
+LIPS/HCI,LIPSedge S205P,???,Global,Structured Light,Stereo,CPU,Ambarella CV2(ARM A53 w/CVFlow vector processor),,PoE,CVFlow,Ubuntu Linux(Embedded) ,802.3at POE,IP67-rated,Yes
+LIPS/HCI,F110 3DxAI,various(7),N/A,N/A,N/A,CPU/GPU,NVidia Volta(Xavier AGX SOM),64GB RAM/32GB eMMC,"PCIe, PoE, GPIO, I2C, UART,M.2",Multiple,Ubuntu Linux,See(10),None,Yes
 Notes,,,,,,,,,,,,,,
 "1 - USB3.0 is the primary interface on most models, IOT & OEM versions may have UART, PoE, etc. available for interfacing as well",,,,,,,,,,,,,,
 "2. No default sensor included, user selects from a set of vendor-provided ""kit"" options at purchase.",,,,,,,,,,,,,,
@@ -27,7 +30,7 @@ Notes,,,,,,,,,,,,,,
 5 - Different HW interfaces available as option boards which can be purchased separately,,,,,,,,,,,,,,
 6. Not available for purchase as of 6/23 ,,,,,,,,,,,,,,
 7 - Does not come with a camera/vision sensor by default. Features CSI/MIPI FPC interface for user-provided sensor,,,,,,,,,,,,,,
-8. Available on pre-order,,,,,,,,,,,,,,
-"9. Default voltage is listed, usually via USB3, other options like POE may be available on different models and use a 24/48/57V power injector at the host end. ",,,,,,,,,,,,,,
+8. Available on pre-order or crowd-funded,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 10. See interface spec for actual device power requirements.  ,,,,,,,,,,,,,,
 11. Uses Integrated radio module to provide 802.11a/b/g/n and BT4.2 wireless connectivity,,,,,,,,,,,,,,
