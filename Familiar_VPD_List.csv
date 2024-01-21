@@ -6,23 +6,32 @@ OpenMV,OpenMVCam RT,OV5640,Rolling(4),N/A,Mono,32-bit CPU,IMXRT1060(Cortex M7) ,
 "EyeCloud AI, Inc. ",EyeCloud AI Kit,various(2),Rolling(4),N/A,Mono,Vector/GPU,Movidius Myriad-X,8G DDR4,"USB3,USB3,others(1)",Multiple(3),OpenVINO,"5V, 2A recommended",None,Yes
 "EyeCloud AI, Inc. ",OpenNCC/NCB,CSI/MIPI(7),N/A,N/A,N/A,Vector/GPU,Movidius Myriad-X,8 GB RAM,"USB3, USB2, FPC",Multiple(3),OpenVINO/OpenNCC,5V/2A,,Yes
 DFRobot,HuskyLens,OV2640,Rolling,N/A,Mono,64-bit CPU,RISCV64(Kendryte K210),6MB/16MB,"UART,I2C",N/A,Arduino,"320mA@3.3V, 230mA@5.0V ",None,Yes
+DFRobot,Horned  SunGem,???,Rolling,N/A,Mono,Vector/GPU,Movidius MA245X,512M RAM,USB-2 w/ USB-C conn.,Multiple(3),OpenVINO/NCSDK,<3W,non-IPx Aluminum,Yes
 Charmed Labs,PixyCam2, Aptina MT9M114,Rolling ,N/A,Mono,32-bit CPU,Cortex M4(NXP4330),(264K/2M),"USB2, UART,I2C,SPI",N/A,"Arduino,PixyMon",150mA,None,Yes
 Arduino,Nicla,GC2145(GalaxyCore) ,??,ToF(VL53L1CBV0FY),Mono,32-bit CPU,Dual Cortex M7/M4(STM32H747AII6 ),"1MB RAM/2MB Flash, 16MB QSPI ","USB3,WiFi, BLE",N/A,"Arduino,OpenMV,MicroPython",,None,Yes
-Google ,Coral Dev Micro,HiMax,Rolling,N/A,Mono,CPU/TPU,Dual Cortex M7/M4 w/TPU,(512Mb/1Gb),"USB2, Wifi,BLE,PoE(5)","TFLite, TFLite Micro","Python, C++",5V,,Yes
-MistyWest,MistySOM,CSI/MIPI(7),N/A,N/A,N/A,CPU/TPU,ARM A55,(2G/32G),"USB2,SPI.I2C,UART,CAN, etc.",ONNX compatible,"Yocto, OpenCV 4.1",5V 1A,,No(6)
-VIA,Pixetto,GalaxyCore GC2053,??,N/A,Mono,CPU ,ARM Cortex A7,64M/128M,Grove/USB2,TFLite ,"Python, Scratch",12V,,Yes
+Google ,Coral Dev Micro,HiMax,Rolling,N/A,Mono,CPU/TPU,Dual Cortex M7/M4 w/TPU,(512Mb/1Gb),"USB2, Wifi,BLE,PoE(5)","TFLite, TFLite Micro","Python, C++",5V,plastic snap-together,Yes
+MistyWest,MistySOM,CSI/MIPI(7),N/A,N/A,N/A,CPU/TPU,ARM A55,(2G/32G),"USB2,SPI.I2C,UART,CAN, etc.",ONNX compatible,"Yocto, OpenCV 4.1",5V 1A,None,No(6)
+VIA,Pixetto,GalaxyCore GC2053,??,N/A,Mono,CPU ,ARM Cortex A7,64M/128M,Grove/USB2,TFLite ,"Python, Scratch",12V,None,Yes
 Adlink,AI Cam DevKit,Sony IMX179,Rolling,N/A,Mono,CPU/GPU,NVidia Maxwell(Nano SOM),4G/16G,USB3/USB2/Gbit LAN,"CUDA, Multiple(3)",CUDA/EVA,12/24V 15V via USB-C,,Yes
-ECon Systems,SmartE-Cam,Sony IMX290 ,Rolling(4),N/A,Mono,CPU/GPU,NVidia Pascal (TX2 SOM),8G/32G,USB3/USB2/Gbit LAN,"CUDA, Multiple(3)","Python, C/C++",802.3at POE,,Yes
-Hailo.AI,Hailo-8/15,N/A,N/A,N/A,N/A,GPU,Hailo-8,,M.2 PCIe,Unknown,"Python, C/C++",3.3V (10),,Yes
+ECon Systems,SmartE-Cam,Sony IMX290 ,Rolling(4),N/A,Mono,CPU/GPU,NVidia Pascal (TX2 SOM),8G/32G,USB3/USB2/Gbit LAN,"CUDA, Multiple(3)","Python, C/C++",802.3at POE,None,Yes
+Hailo.AI,Hailo-8/15,N/A,N/A,N/A,N/A,GPU,Hailo-8,,M.2 PCIe,Unknown,"Python, C/C++",3.3V (10),None,Yes
 Espressif,ESP-S3-EYE,OV-2640,Rolling,No,Mono,CPU,ESP32-S3R8,8M PSRAM/8M Flash,"USB3,JTAG,WLAN(11)",TFLite/TFLite-Micro,MicroPython,5V/3.3V,None,Yes(12)
 Darcy.ai,DarcyCam,IMX-219,Rolling,No,Mono,CPU/TPU,ARM A55/Google Coral ,8G RAM/128G eMMC,USB3/WiFi/PoE/MicroHDMI,Multiple(3),Debian Linux,5V/USB/802.3at PoE,built-in,No(6)
 Orbbec,Persee,???,Rolling,Structured Light,Stereo,CPU/NPU,AmLogic AM311D media proc.(quad core A73 w/ dual A53),4G RAM/32GB Flash,"USB2,WiFi,BT 5",N/A,Ubuntu Linux/Android,12V/2A DC,Yes,Yes
 Useful,Tiny Code Reader,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,ZXing,3.3V,None,Yes
 Useful,Person Sensor,ArduCam,Rolling,No,Mono,CPU,RP2040,N/A,"I2C, SPI",N/A,N/A,3.3V,None,Yes
-Tangram Vision,HiFi,Mira220 ,Global,Structured Light,Stereo,CPU,TI Jacinto(Dual ARM A72),8GB RAM,"USB-3,PoE, CSI2.0",TIDL,"TIDL, ROS",802.3af POE,,No(8)
+Tangram Vision,HiFi,Mira220 ,Global,Structured Light,Stereo,CPU,TI Jacinto(Dual ARM A72),8GB RAM,"USB-3,PoE, CSI2.0",TIDL,"TIDL, ROS",802.3af POE,Aluminum,Yes(8)
 LIPS/HCI,LIPSedge S205P,???,Global,Structured Light,Stereo,CPU,Ambarella CV2(ARM A53 w/CVFlow vector processor),,PoE,CVFlow,Ubuntu Linux(Embedded) ,802.3at POE,IP67-rated,Yes
 LIPS/HCI,F110 3DxAI,various(7),N/A,N/A,N/A,CPU/GPU,NVidia Volta(Xavier AGX SOM),64GB RAM/32GB eMMC,"PCIe, PoE, GPIO, I2C, UART,M.2",Multiple,Ubuntu Linux,See(10),None,Yes
+Maxlabs,Tokay Lite,OV-2640,??,No,Mono,CPU,ESP32-S3,8M Flash/8M RAM,"USB-3,BLE,SPI,UART,WiFi ",TFLite,"TF,TFLite",USB3/LiPo,None,Yes(8)
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 Notes,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
 "1 - USB3.0 is the primary interface on most models, IOT & OEM versions may have UART, PoE, etc. available for interfacing as well",,,,,,,,,,,,,,
 "2. No default sensor included, user selects from a set of vendor-provided ""kit"" options at purchase.",,,,,,,,,,,,,,
 3 - Most common NN models/frameworks supported via converter/compile toolchain,,,,,,,,,,,,,,
